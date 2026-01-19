@@ -1,0 +1,18 @@
+{
+  "name": "smsar",
+  "version": "1.0.0",
+  "description": "Real estate management application for brokers",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "npm run dev",
+    "install-all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm start --prefix client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}

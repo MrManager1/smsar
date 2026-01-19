@@ -1,0 +1,114 @@
+/* Custom styles to make the UI look more professional */
+:root{
+  --primary:#0d6efd;
+  --accent:#6610f2;
+  --muted:#6c757d;
+  --card-bg:#ffffff;
+}
+body{
+  /* background: linear-gradient(180deg, #f7f9fc 0%, #ffffff 60%); */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  color:#222;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+/* Realistic Background Image */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2070&q=80') no-repeat center center;
+  background-size: cover;
+  animation: bgBreath 40s infinite alternate ease-in-out;
+}
+/* Overlay for readability */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(2px);
+}
+.navbar-brand{
+  font-weight:700;
+  letter-spacing:0.5px;
+}
+.navbar{
+  background: linear-gradient(90deg, rgba(13,110,253,1) 0%, rgba(102,16,242,1) 100%);
+}
+.navbar .nav-link{
+  color: rgba(255,255,255,0.9) !important;
+}
+.container{
+  max-width:1150px;
+}
+.hero-banner{
+  background: linear-gradient(90deg, rgba(13,110,253,0.08), rgba(102,16,242,0.04));
+  border-radius:12px;
+  padding:18px 22px;
+  margin-bottom:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.hero-left h1{margin:0;font-weight:700}
+.hero-left p{margin:0;color:var(--muted)}
+.btn-primary, .btn-success{border-radius:8px}
+.card{border-radius:12px}
+.card-img-top{
+  height:180px;
+  object-fit:cover;
+  border-top-left-radius:12px;
+  border-top-right-radius:12px;
+}
+.card-footer{background:transparent;border-top:0}
+.list-group-item{border-radius:8px;margin-bottom:8px}
+.matching-badge{min-width:64px;text-align:center}
+.table thead th{background:#f8f9fa}
+.table td, .table th{vertical-align:middle}
+/* responsive tweaks */
+@media (max-width:768px){
+  .card-img-top{height:140px}
+  .hero-banner{flex-direction:column;gap:12px;align-items:flex-start}
+}
+
+/* Dark mode */
+body.dark-mode{
+  background: #0f1724;
+  color: #e6eef8;
+}
+body.dark-mode .navbar{
+  background: linear-gradient(90deg, rgba(2,6,23,1) 0%, rgba(8,16,36,1) 100%);
+}
+body.dark-mode .card{
+  background: #071020;
+  color: #e6eef8;
+}
+body.dark-mode .card .card-body{background: transparent}
+body.dark-mode .list-group-item{background: rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03)}
+
+/* Match details modal (FB-like post) */
+.modal .modal-content{border-radius:12px}
+.modal .card{border-radius:8px}
+.modal .carousel-item img{max-height:360px;object-fit:cover}
+@media (max-width:768px){
+  .modal .carousel-item img{max-height:220px}
+}
+body.dark-mode .navbar .nav-link{color: rgba(255,255,255,0.9) !important}
+
+@keyframes bgBreath {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}

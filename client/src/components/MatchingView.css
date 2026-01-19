@@ -1,0 +1,67 @@
+.matching-view {
+    padding: 1rem;
+}
+
+.client-card-match {
+    background: var(--glass-bg);
+    border: var(--glass-border);
+    border-radius: var(--card-radius);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    box-shadow: var(--glass-shadow);
+    transition: all 0.3s ease-in-out;
+}
+
+.client-card-match:hover {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.client-card-match h3 {
+    color: var(--bs-primary);
+    border-bottom: 2px solid var(--bs-primary);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client-card-match h3 .badge {
+    font-size: 0.9rem;
+    background-color: rgba(var(--bs-primary-rgb), 0.2);
+    color: var(--bs-primary);
+}
+
+.match-item {
+    background-color: rgba(var(--bs-primary-rgb), 0.05);
+    border-left: 5px solid var(--bs-primary);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.dark-mode .match-item {
+    background-color: rgba(var(--bs-primary-rgb), 0.1);
+    border-color: rgba(var(--bs-primary-rgb), 0.5);
+}
+
+.match-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    background-color: rgba(var(--bs-primary-rgb), 0.1);
+}
+
+.match-item h5 {
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.match-reasons {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px dashed rgba(108, 117, 125, 0.3);
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}

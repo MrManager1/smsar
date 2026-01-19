@@ -1,0 +1,53 @@
+name: Deploy client to Firebase Hosting and server to Cloud Run
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Build client
+        working-directory: ./client
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy client to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
+          projectId: '${{ secrets.FIREBASE_PROJECT_ID }}'
+
+      - name: Build and push server image to GCR
+        env:
+          IMAGE: gcr.io/${{ secrets.GCP_PROJECT }}/smsar-server:${{ github.sha }}
+        run: |
+          echo "Setting up gcloud..."
+          echo $GCP_SA_KEY | base64 --decode > /tmp/gcloud-key.json
+          curl -sSL https://sdk.cloud.google.com | bash >/dev/null
+          source $HOME/google-cloud-sdk/path.bash.inc
+          gcloud auth activate-service-account --key-file=/tmp/gcloud-key.json
+          gcloud --quiet config set project ${{ secrets.GCP_PROJECT }}
+          gcloud auth configure-docker --quiet
+          docker build -t $IMAGE ./server
+          docker push $IMAGE
+
+      - name: Deploy server to Cloud Run
+        env:
+          IMAGE: gcr.io/${{ secrets.GCP_PROJECT }}/smsar-server:${{ github.sha }}
+        run: |
+          echo $GCP_SA_KEY | base64 --decode > /tmp/gcloud-key.json
+          source $HOME/google-cloud-sdk/path.bash.inc || true
+          gcloud auth activate-service-account --key-file=/tmp/gcloud-key.json
+          gcloud config set project ${{ secrets.GCP_PROJECT }}
+          gcloud run deploy smsar-server --image=$IMAGE --platform=managed --region=${{ secrets.GCP_REGION }} --allow-unauthenticated --project=${{ secrets.GCP_PROJECT }}

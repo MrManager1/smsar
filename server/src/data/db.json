@@ -1,0 +1,377 @@
+{
+  "logs": [
+    {
+      "type": "view_match",
+      "propertyId": 4,
+      "clientId": 1,
+      "matchPercentage": 80,
+      "ts": "2025-12-25T18:40:39.790Z",
+      "id": 1
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T09:34:55.121Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T09:35:42.744Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T09:42:48.641Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:45:09.227Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:45:57.621Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:45:59.844Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:02.062Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:04.275Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:06.674Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:09.002Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:11.296Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:13.603Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:15.861Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:18.055Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:19.875Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:21.711Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:23.543Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:25.368Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:27.179Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:29.015Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:30.832Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:32.656Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:34.493Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:36.336Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:38.259Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:40.094Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:41.888Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:43.752Z"
+    },
+    {
+      "type": "startup_write_test",
+      "ts": "2025-12-26T13:46:45.661Z"
+    }
+  ],
+  "conversations": [
+    {
+      "guestName": "TestUser",
+      "guestContact": "010222333",
+      "id": 1
+    },
+    {
+      "clientId": null,
+      "guestName": "و م م 0",
+      "guestContact": "01025852",
+      "propertyId": null,
+      "createdAt": "2025-12-26T08:49:06.539Z",
+      "updatedAt": "2025-12-26T08:49:06.539Z",
+      "open": true,
+      "id": 2
+    },
+    {
+      "clientId": null,
+      "guestName": "و م م 0",
+      "guestContact": "01025852",
+      "propertyId": null,
+      "createdAt": "2025-12-26T08:49:06.559Z",
+      "updatedAt": "2025-12-26T08:49:06.559Z",
+      "open": true,
+      "id": 3
+    },
+    {
+      "clientId": null,
+      "guestName": "و م م 0",
+      "guestContact": "01025852",
+      "propertyId": null,
+      "createdAt": "2025-12-26T08:49:06.562Z",
+      "updatedAt": "2025-12-26T08:49:06.562Z",
+      "open": true,
+      "id": 4
+    },
+    {
+      "clientId": null,
+      "guestName": "و م م 0",
+      "guestContact": "01025852",
+      "propertyId": null,
+      "createdAt": "2025-12-26T08:49:06.564Z",
+      "updatedAt": "2025-12-26T08:49:06.564Z",
+      "open": true,
+      "id": 5
+    },
+    {
+      "clientId": null,
+      "guestName": "و م م 0",
+      "guestContact": "01025852",
+      "propertyId": null,
+      "createdAt": "2025-12-26T08:49:06.567Z",
+      "updatedAt": "2025-12-26T08:49:06.567Z",
+      "open": true,
+      "id": 6
+    },
+    {
+      "clientId": null,
+      "guestName": "و م م 0",
+      "guestContact": "01025852",
+      "propertyId": null,
+      "createdAt": "2025-12-26T08:49:06.569Z",
+      "updatedAt": "2025-12-26T08:49:06.569Z",
+      "open": true,
+      "id": 7
+    },
+    {
+      "clientId": null,
+      "guestName": "و م م 0",
+      "guestContact": "01025852",
+      "propertyId": null,
+      "createdAt": "2025-12-26T08:49:06.570Z",
+      "updatedAt": "2025-12-26T08:49:06.570Z",
+      "open": true,
+      "id": 8
+    },
+    {
+      "clientId": null,
+      "guestName": "و م م 0",
+      "guestContact": "01025852",
+      "propertyId": null,
+      "createdAt": "2025-12-26T08:49:06.572Z",
+      "updatedAt": "2025-12-26T08:49:06.572Z",
+      "open": true,
+      "id": 9
+    },
+    {
+      "clientId": null,
+      "guestName": "و م م 0",
+      "guestContact": "01025852",
+      "propertyId": null,
+      "createdAt": "2025-12-26T08:49:06.573Z",
+      "updatedAt": "2025-12-26T08:49:06.573Z",
+      "open": true,
+      "id": 10
+    },
+    {
+      "clientId": null,
+      "guestName": "مصطفي",
+      "guestContact": "01040765626",
+      "propertyId": null,
+      "createdAt": "2025-12-26T13:45:55.305Z",
+      "updatedAt": "2025-12-26T13:46:04.372Z",
+      "open": true,
+      "id": 11
+    }
+  ],
+  "messages": [
+    {
+      "sender": "visitor",
+      "conversationId": 1,
+      "senderName": "TestUser",
+      "text": "?????",
+      "id": 1
+    },
+    {
+      "conversationId": 11,
+      "sender": "visitor",
+      "senderName": "مصطفي",
+      "text": "السلام عليكم ",
+      "ts": "2025-12-26T13:46:04.359Z",
+      "id": 2
+    }
+  ],
+  "properties": [
+    {
+      "id": 2,
+      "type": "فيلا",
+      "status": "للإيجار",
+      "location": {
+        "governorate": "الجيزة",
+        "city": "الشيخ زايد",
+        "neighborhood": "الحي السابع"
+      },
+      "area": 400,
+      "rooms": 5,
+      "bathrooms": 4,
+      "price": 35000,
+      "availability": "متاحة",
+      "imageUrl": "https://via.placeholder.com/300x200.png?text=فيلا+بالشيخ+زايد",
+      "description": "فيلا مستقلة بحديقة خاصة وحمام سباحة.",
+      "ownerName": "فاطمة محمود",
+      "ownerPhone": "01224445566",
+      "ownerPhoto": "https://randomuser.me/api/portraits/women/68.jpg"
+    },
+    {
+      "id": 3,
+      "type": "مكتب",
+      "status": "للإيجار",
+      "location": {
+        "governorate": "القاهرة",
+        "city": "مصر الجديدة",
+        "neighborhood": "الكوربة"
+      },
+      "area": 80,
+      "rooms": 2,
+      "bathrooms": 1,
+      "price": 15000,
+      "availability": "محجوزة",
+      "imageUrl": "https://via.placeholder.com/300x200.png?text=مكتب+بمصر+الجديدة",
+      "description": "مكتب إداري بمنطقة حيوية، قريب من المترو.",
+      "ownerName": "خالد علي",
+      "ownerPhone": "01117778899",
+      "ownerPhoto": "https://randomuser.me/api/portraits/men/75.jpg"
+    },
+    {
+      "id": 4,
+      "type": "شقة",
+      "status": "للبيع",
+      "location": {
+        "governorate": "القاهرة",
+        "city": "القاهرة الجديدة",
+        "neighborhood": "الرحاب"
+      },
+      "area": 180,
+      "rooms": 3,
+      "bathrooms": 3,
+      "price": 2500000,
+      "availability": "متاحة",
+      "imageUrl": "https://via.placeholder.com/300x200.png?text=شقة+في+الرحاب",
+      "description": "شقة واسعة في موقع مميز بالرحاب.",
+      "ownerName": "ليلى حسن",
+      "ownerPhone": "01553334455",
+      "ownerPhoto": "https://randomuser.me/api/portraits/women/65.jpg"
+    },
+    {
+      "type": "شقة",
+      "status": "للإيجار",
+      "location": {
+        "governorate": "غير محدد",
+        "city": "الشيخ ذايد",
+        "neighborhood": "غير محدد"
+      },
+      "area": 90,
+      "rooms": 3,
+      "bathrooms": 1,
+      "price": 1000,
+      "availability": "متاحة",
+      "imageUrl": "https://via.placeholder.com/300x200.png?text=عقار+جديد",
+      "description": "عقار في الشيخ ذايد",
+      "ownerName": "محمود ",
+      "ownerPhone": "0102655",
+      "id": 7
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "name": "أحمد محمود",
+      "photo": "https://randomuser.me/api/portraits/men/32.jpg",
+      "contact": "01001234567",
+      "email": "ahmed.mahmoud@example.com",
+      "desiredType": "شقة",
+      "desiredStatus": "شراء",
+      "preferredLocation": "القاهرة الجديدة",
+      "budget": 2200000,
+      "minArea": 140,
+      "minRooms": 3,
+      "notes": "يفضل الدفع كاش، يبحث عن تشطيب حديث."
+    },
+    {
+      "id": 2,
+      "name": "فاطمة علي",
+      "photo": "https://randomuser.me/api/portraits/women/12.jpg",
+      "contact": "01227654321",
+      "email": "fatma.ali@example.com",
+      "desiredType": "فيلا",
+      "desiredStatus": "إيجار",
+      "preferredLocation": "الشيخ زايد",
+      "budget": 40000,
+      "minArea": 350,
+      "minRooms": 4,
+      "notes": "تحتاج إلى حديقة كبيرة من أجل الأطفال."
+    },
+    {
+      "name": "مثال 1",
+      "photo": "https://randomuser.me/api/portraits/men/11.jpg",
+      "contact": "01154194558",
+      "email": "ahmednajah533@gmail.com",
+      "desiredType": "شقة",
+      "desiredStatus": "للبيع",
+      "preferredLocation": "badr",
+      "budget": 2500000,
+      "minArea": 99,
+      "minRooms": 3,
+      "notes": "اي ملاحظات هنا ؟؟",
+      "id": 3
+    }
+  ]
+}
