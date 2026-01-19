@@ -9,7 +9,7 @@
     "build": "tsc",
     "serve-json": "json-server --watch src/data/db.json --port 5001",
     "start:public": "cross-env READ_ONLY=true node dist/server.js",
-    "start:firestore": "cross-env USE_FIRESTORE=true npm run start"
+    "start:firestore": "USE_FIRESTORE=true npm run start"
   },
   "keywords": [],
   "author": "",
